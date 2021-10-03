@@ -7,10 +7,12 @@ The information was provided as JSON, so we just focused on the presentation.
 ### The information analysis
 In recent years the scientists have been making analysis and studies around what live in the belly button, as it was the first conctact of a human being with the exterior, feed source, emotions connection with the mother, etc.
 They took a group and started the tests culturing bacteria samples.
+__________________________
 ![Culture](culture.png)
 
 Once they got the results and we plot them using bubble graphs we were able to confirmed graphically what the scientists have told us: "There no identical sample among the whole group".
 When the scientist developed that theory the community was in shock, as this could be a new way to identify a person.
+__________________________
 ![Bubble](bubble.png)
 
 
