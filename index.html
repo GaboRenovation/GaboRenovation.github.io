@@ -1,18 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Greek gods</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="plot"></div>
-    <script src="data.js"></script>
-    <script src="plots.js"></script>
+  <div class="container">
+    <div class="row">
+      <!-- Responsible -->
+      <div class="col-xs-18 col-md-12 jumbotron text-center">
+        <h1>Belly Bacteria Dashboard</h1>
+        <p>powered by Plotly</p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Responsible -->
+      <div class="col-xs-12 col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <!-- Responsible -->
+      <div class="col-xs-12 col-md-5">
+        <div id="bar"></div>
+        <b>Scientists have identified a total of 2,368 species of bacteria</b> 
+        <p>People's individual profiles were snowflake-ily, bacterially unique. </p>
+        <p>https://www.theatlantic.com/health/archive/2012/12/1-458-bacteria-species-new-to-science-found-in-our-belly-buttons/266360/</p>
+      </div>
+      <!-- Responsible -->
+      <div class="col-xs-12 col-md-5">
+        <div id="gauge"></div>
+        <b>An importan habit of washing the belly button</b> 
+        <p>The results are impresive, not many people put attention about scrubbing the belly button frequently</p>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Responsible -->
+      <div class="col-xs-18 col-sm-6 col-md-12">
+        <div id="bubble"></div>
+        <b>From a different perspective</b> 
+        <p>These are the results of the individual study, by type, density, volumen, etc.  this could be the next ID after fingerprints and biometrics.</p>
+      </div>
+
+    <div class="row">
+      <!-- Responsible -->
+      <div class="col-xs-9 col-md-6">
+        <div class="info">
+          <h4>_________________________________________________________________</h4>
+          <h1> <b>Is there a good bacteria in your belly button?</b> </h1> 
+          <img src="https://www2.nau.edu/lrm22/lessons/microbiology/bacteria-in-a-petri-dish-compressed.jpg" 
+            width="100%"/>
+          <h6>https://www2.nau.edu</h6>  
+
+
+        </div>
+      </div>
+      <!-- Responsible -->
+      <div class="col-xs-9 col-md-6">
+        <div class="info">
+          <h4>_________________________________________________________________</h4>
+          <P>In a recent document of the Medical News Today, the belly button is home to many bacteria but can be overlooked when a person washes. Mostly, the bacteria are harmless, but they can multiply and cause an infection. We find out what might cause a belly button to smell, and how to keep it clean and healthy.</P>
+          <h4>_________________________________________________________________</h4>
+          <h5>Fast facts on belly button smell:</h5> 
+          <b>Infection</b> 
+          <p>A fungal infection can result if belly button bacteria multiply too much</p>
+          <b>Hygiene</b> 
+          <p>Belly button skin needs to be cleaned regularly to keep it healthy.</p>
+          <b>Smell</b> 
+          <p>Risk factors, such as poor hygiene, increase the potential for the belly button to smell.</p>
+          <h4>_________________________________________________________________</h4>
+          <p>Most belly buttons are indented so act as a trap for sweat, dead skin, and dirt. Few people wash the belly button with soap so germs can develop.
+
+            The most common cause for a belly button smell is poor hygiene. All areas of the body need to be washed regularly to stay clean and healthy.
+            
+            Skin is home to trillions of bacteria, which develop naturally and are usually harmless.
+            
+            The belly button has folds of skin that provide a place for bacteria to grow. Most of these bacteria remain at a low level and will not cause a smell. But if bacteria become too dense, they may result in an unpleasant or offensive smell.
+            
+            Any infection should be checked by a doctor, and medication and lifestyle changes may be needed.</p>
+        </br>
+        <h6>References</h6>   
+        <a href="https://www.medicalnewstoday.com/articles/320706#_noHeaderPrefixedContent">Medical News Today</a>
+        <p>.</p>
+        <a href="https://www.theatlantic.com/health/archive/2012/12/1-458-bacteria-species-new-to-science-found-in-our-belly-buttons/266360/">The Atlantic</a>
+        </div>
+      </div>
+    </div>    
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+
 </body>
 </html>
-
 
 
